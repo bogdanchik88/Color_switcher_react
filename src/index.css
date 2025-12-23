@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #000000;
+    --color-secondary: #636363;
+    --color-bg-primary: #cacaca;
+    
+  }
+
+  *{
+    @apply transition-colors duration-500 ease-in-out;
+  }
+  
+  .theme-black {
+    --color-primary: #000000;
+    --color-secondary: #636363;
+    --color-bg-primary: #cacaca;  
+  }
+
+  .theme-blue {
+    --color-primary: #007df1;
+    --color-secondary: #3ca1ff;
+    --color-bg-primary: #8192d4;    
+  }
+
+  .theme-red {
+    --color-primary: #f10000;
+    --color-secondary: #f85050;
+    --color-bg-primary: #c97474;    
+  }
+
+  .theme-violet {
+    --color-primary: #a700ef;
+    --color-secondary: #c156ee;
+    --color-bg-primary: #af6acc;    
+  }
+}
+
+@theme {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-bg-primary: var(--color-bg-primary);
+}
